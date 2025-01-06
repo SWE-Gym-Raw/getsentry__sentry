@@ -78,18 +78,6 @@ class DataCondition(DefaultFieldsModel):
         on_delete=models.CASCADE,
     )
 
-    @property
-    def slow_conditions(self) -> list[Condition]:
-        return [
-            Condition.EVENT_FREQUENCY,
-            Condition.EVENT_UNIQUE_USER_FREQUENCY,
-            Condition.EVENT_FREQUENCY_PERCENT,
-            Condition.EVENT_UNIQUE_USER_FREQUENCY_WITH_CONDITIONS,
-        ]
-
-    def is_slow_condition(self):
-        return Condition(self.type) in self.slow_conditions
-
     def get_condition_result(self) -> DataConditionResult:
         match self.condition_result:
             case float() | bool():
@@ -135,3 +123,15 @@ class DataCondition(DefaultFieldsModel):
 
         result = handler.evaluate_value(value, self.comparison)
         return self.get_condition_result() if result else None
+
+
+SLOW_CONDITIONS = [
+    Condition.EVENT_FREQUENCY,
+    Condition.EVENT_UNIQUE_USER_FREQUENCY,
+    Condition.EVENT_FREQUENCY_PERCENT,
+    Condition.EVENT_UNIQUE_USER_FREQUENCY_WITH_CONDITIONS,
+]
+
+
+def is_slow_condition(cond: DataCondition) -> bool:
+    return Condition(cond.type) in SLOW_CONDITIONS
