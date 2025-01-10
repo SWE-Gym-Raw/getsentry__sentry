@@ -51,7 +51,7 @@ class GroupSearchView(DefaultFieldsModelExisting):
     projects = models.ManyToManyField(
         "sentry.Project", through=GroupSearchViewProject
     )  # Implicit null=True
-    is_all_projects = models.BooleanField(default=False)
+    is_all_projects = models.BooleanField(null=False, default=False)
 
     environments = models.ManyToManyField(
         "sentry.Environment", through=GroupSearchViewEnvironment
