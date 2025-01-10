@@ -9,6 +9,28 @@ from sentry.db.models.fields.hybrid_cloud_foreign_key import HybridCloudForeignK
 from sentry.models.savedsearch import SortOptions
 
 
+class GroupSearchViewProject(DefaultFieldsModelExisting):
+    __relocation_scope__ = RelocationScope.Organization
+    group_search_view = FlexibleForeignKey("sentry.GroupSearchView")
+    project = FlexibleForeignKey("sentry.Project")
+
+    class Meta:
+        app_label = "sentry"
+        db_table = "sentry_groupsearchviewproject"
+        unique_together = (("group_search_view", "project"),)
+
+
+class GroupSearchViewEnvironment(DefaultFieldsModelExisting):
+    __relocation_scope__ = RelocationScope.Organization
+    group_search_view = FlexibleForeignKey("sentry.GroupSearchView")
+    environment = FlexibleForeignKey("sentry.Environment")
+
+    class Meta:
+        app_label = "sentry"
+        db_table = "sentry_groupsearchviewenvironment"
+        unique_together = (("group_search_view", "environment"),)
+
+
 @region_silo_model
 class GroupSearchView(DefaultFieldsModelExisting):
     """
@@ -25,6 +47,17 @@ class GroupSearchView(DefaultFieldsModelExisting):
         max_length=16, default=SortOptions.DATE, choices=SortOptions.as_choices()
     )
     position = models.PositiveSmallIntegerField()
+
+    projects = models.ManyToManyField(
+        "sentry.Project", through=GroupSearchViewProject
+    )  # Implicit null=True
+    is_all_projects = models.BooleanField(default=False)
+
+    environments = models.ManyToManyField(
+        "sentry.Environment", through=GroupSearchViewEnvironment
+    )  # Implicit null=True
+
+    time_filters = models.JSONField(null=True)
 
     class Meta:
         app_label = "sentry"
