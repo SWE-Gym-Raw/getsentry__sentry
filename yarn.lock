@@ -2435,6 +2435,14 @@
     "@react-types/shared" "^3.22.0"
     "@swc/helpers" "^0.5.0"
 
+"@react-stately/collections@^3.12.2":
+  version "3.12.2"
+  resolved "https://registry.yarnpkg.com/@react-stately/collections/-/collections-3.12.2.tgz#95cce481bd6ff69aa4694a8b47015360dc4de84e"
+  integrity sha512-RoehfGwrsYJ/WGtyGSLZNYysszajnq0Q3iTXg7plfW1vNEzom/A31vrLjOSOHJWAtwW339SDGGRpymDtLo4GWA==
+  dependencies:
+    "@react-types/shared" "^3.28.0"
+    "@swc/helpers" "^0.5.0"
+
 "@react-stately/form@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@react-stately/form/-/form-3.0.0.tgz#584af339a128045c357c1b8ca440c87460a41b0f"
@@ -2454,15 +2462,15 @@
     "@react-types/shared" "^3.22.0"
     "@swc/helpers" "^0.5.0"
 
-"@react-stately/list@^3.10.2":
-  version "3.10.2"
-  resolved "https://registry.yarnpkg.com/@react-stately/list/-/list-3.10.2.tgz#5c93f33dbe8d3cc0d063fc2d59d4d4b788be379a"
-  integrity sha512-INt+zofkIg2KN8B95xPi9pJG7ZFWAm30oIm/lCPBqM3K1Nm03/QaAbiQj2QeJcOsG3lb7oqI6D6iwTolwJkjIQ==
+"@react-stately/list@^3.10.2", "@react-stately/list@^3.12.0":
+  version "3.12.0"
+  resolved "https://registry.yarnpkg.com/@react-stately/list/-/list-3.12.0.tgz#e7476a6ccba9509804bef6557a566355eb6b4daf"
+  integrity sha512-6niQWJ6TZwOKLAOn2wIsxtOvWenh3rKiKdOh4L4O4f7U+h1Hu000Mu4lyIQm2P9uZAkF2Y5QNh6dHN+hSd6h3A==
   dependencies:
-    "@react-stately/collections" "^3.10.4"
-    "@react-stately/selection" "^3.14.2"
-    "@react-stately/utils" "^3.9.0"
-    "@react-types/shared" "^3.22.0"
+    "@react-stately/collections" "^3.12.2"
+    "@react-stately/selection" "^3.20.0"
+    "@react-stately/utils" "^3.10.5"
+    "@react-types/shared" "^3.28.0"
     "@swc/helpers" "^0.5.0"
 
 "@react-stately/menu@^3.6.0":
@@ -2516,6 +2524,16 @@
     "@react-types/shared" "^3.22.0"
     "@swc/helpers" "^0.5.0"
 
+"@react-stately/selection@^3.20.0":
+  version "3.20.0"
+  resolved "https://registry.yarnpkg.com/@react-stately/selection/-/selection-3.20.0.tgz#991a67be2d80fb0c0c0ffba7542b1a0df5a31165"
+  integrity sha512-woUSHMTyQiNmCf63Dyot1WXFfWnm6PFYkI9kymcq1qrrly4g/j27U+5PaRWOHawMiJwn1e1GTogk8B+K5ahshQ==
+  dependencies:
+    "@react-stately/collections" "^3.12.2"
+    "@react-stately/utils" "^3.10.5"
+    "@react-types/shared" "^3.28.0"
+    "@swc/helpers" "^0.5.0"
+
 "@react-stately/slider@^3.5.0":
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/@react-stately/slider/-/slider-3.5.0.tgz#d59bcd6fe58c238772b771ffb1a5640fb22d839c"
@@ -2526,14 +2544,14 @@
     "@react-types/slider" "^3.7.0"
     "@swc/helpers" "^0.5.0"
 
-"@react-stately/tabs@^3.6.3":
-  version "3.6.3"
-  resolved "https://registry.yarnpkg.com/@react-stately/tabs/-/tabs-3.6.3.tgz#65bd11595624f2e0c49069758973d520c47f5b5a"
-  integrity sha512-Nj+Gacwa2SIzYIvHW40GsyX4Q6c8kF7GOuXESeQswbCjnwqhrSbDBp+ngPcUPUJxqFh6JhDCVwAS3wMhUoyUwA==
+"@react-stately/tabs@^3.6.3", "@react-stately/tabs@^3.8.0":
+  version "3.8.0"
+  resolved "https://registry.yarnpkg.com/@react-stately/tabs/-/tabs-3.8.0.tgz#9936aee9196cb5b55f9683ffe961da2e8adb104f"
+  integrity sha512-I8ctOsUKPviJ82xWAcZMvWqz5/VZurkE+W9n9wrFbCgHAGK/37bx+PM1uU/Lk4yKp8WrPYSFOEPil5liD+M+ew==
   dependencies:
-    "@react-stately/list" "^3.10.2"
-    "@react-types/shared" "^3.22.0"
-    "@react-types/tabs" "^3.3.4"
+    "@react-stately/list" "^3.12.0"
+    "@react-types/shared" "^3.28.0"
+    "@react-types/tabs" "^3.3.13"
     "@swc/helpers" "^0.5.0"
 
 "@react-stately/toggle@^3.7.0":
@@ -2554,6 +2572,13 @@
     "@react-stately/selection" "^3.14.2"
     "@react-stately/utils" "^3.9.0"
     "@react-types/shared" "^3.22.0"
+    "@swc/helpers" "^0.5.0"
+
+"@react-stately/utils@^3.10.5":
+  version "3.10.5"
+  resolved "https://registry.yarnpkg.com/@react-stately/utils/-/utils-3.10.5.tgz#47bb91cd5afd1bafe39353614e5e281b818ebccc"
+  integrity sha512-iMQSGcpaecghDIh3mZEpZfoFH3ExBwTtuBEcvZ2XnGzCgQjeYXcMdIUwAfVQLXFTdHUHGF6Gu6/dFrYsCzySBQ==
+  dependencies:
     "@swc/helpers" "^0.5.0"
 
 "@react-stately/utils@^3.9.0":
@@ -2629,10 +2654,10 @@
   dependencies:
     "@react-types/shared" "^3.22.0"
 
-"@react-types/shared@^3.22.0":
-  version "3.22.0"
-  resolved "https://registry.yarnpkg.com/@react-types/shared/-/shared-3.22.0.tgz#70f85aad46cd225f7fcb29f1c2b5213163605074"
-  integrity sha512-yVOekZWbtSmmiThGEIARbBpnmUIuePFlLyctjvCbgJgGhz8JnEJOipLQ/a4anaWfzAgzSceQP8j/K+VOOePleA==
+"@react-types/shared@^3.22.0", "@react-types/shared@^3.28.0":
+  version "3.28.0"
+  resolved "https://registry.yarnpkg.com/@react-types/shared/-/shared-3.28.0.tgz#7b4b5485b758228bdbe31ecae66ed07a29e2be4d"
+  integrity sha512-9oMEYIDc3sk0G5rysnYvdNrkSg7B04yTKl50HHSZVbokeHpnU0yRmsDaWb9B/5RprcKj8XszEk5guBO8Sa/Q+Q==
 
 "@react-types/slider@^3.7.0":
   version "3.7.0"
@@ -2641,12 +2666,12 @@
   dependencies:
     "@react-types/shared" "^3.22.0"
 
-"@react-types/tabs@^3.3.4":
-  version "3.3.4"
-  resolved "https://registry.yarnpkg.com/@react-types/tabs/-/tabs-3.3.4.tgz#43fa93a4a67dcc53031afc56a8ad3bf5f44473a8"
-  integrity sha512-4mCTtFrwMRypyGTZCvNYVT9CkknexO/UYvqwDm2jMYb8JgjRvxnomu776Yh7uyiYKWyql2upm20jqasEOm620w==
+"@react-types/tabs@^3.3.13", "@react-types/tabs@^3.3.4":
+  version "3.3.13"
+  resolved "https://registry.yarnpkg.com/@react-types/tabs/-/tabs-3.3.13.tgz#14f09a1def3d7c33f65ef63513d5af84415a01ae"
+  integrity sha512-jqaK2U+WKChAmYBMO8QxQlFaIM8zDRY9+ignA1HwIyRw7vli4Mycc4RcMxTPm8krvgo+zuVrped9QB+hsDjCsQ==
   dependencies:
-    "@react-types/shared" "^3.22.0"
+    "@react-types/shared" "^3.28.0"
 
 "@react-types/textfield@^3.9.0":
   version "3.9.0"
@@ -10980,7 +11005,16 @@ string-length@^4.0.1:
     char-regex "^1.0.2"
     strip-ansi "^6.0.0"
 
-"string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.3:
+"string-width-cjs@npm:string-width@^4.2.0":
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
+  integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
+  dependencies:
+    emoji-regex "^8.0.0"
+    is-fullwidth-code-point "^3.0.0"
+    strip-ansi "^6.0.1"
+
+string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -11046,7 +11080,14 @@ string_decoder@^1.1.1, string_decoder@~1.1.1:
   dependencies:
     safe-buffer "~5.1.0"
 
-"strip-ansi-cjs@npm:strip-ansi@^6.0.1", strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+"strip-ansi-cjs@npm:strip-ansi@^6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
+  integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
+  dependencies:
+    ansi-regex "^5.0.1"
+
+strip-ansi@^6.0.0, strip-ansi@^6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
   integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
@@ -12023,7 +12064,16 @@ word-wrap@~1.2.3:
   resolved "https://registry.yarnpkg.com/word-wrap/-/word-wrap-1.2.4.tgz#cb4b50ec9aca570abd1f52f33cd45b6c61739a9f"
   integrity sha512-2V81OA4ugVo5pRo46hAoD2ivUJx8jXmWXfUkY4KFNw0hEptvN0QfH3K4nHiwzGeKl5rFKedV48QVoqYavy4YpA==
 
-"wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+"wrap-ansi-cjs@npm:wrap-ansi@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
+  integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
+  dependencies:
+    ansi-styles "^4.0.0"
+    string-width "^4.1.0"
+    strip-ansi "^6.0.0"
+
+wrap-ansi@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
